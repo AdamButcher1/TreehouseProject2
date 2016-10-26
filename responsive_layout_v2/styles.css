@@ -1,0 +1,117 @@
+body {
+	background-color: #F5F5F5;
+}
+
+.main-header {
+	overflow: hidden;
+	height:50%;
+	padding-bottom: 50px;
+}
+
+.name, ul h1 {
+	font-family: arial;
+	text-align: center;
+}
+
+.main-nav li {
+	font-family: arial;
+	text-align: center;
+	background-color: #FFF;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	list-style: none;
+	width:90%;
+}
+
+.footer-info {
+	 background-color: #FFF;
+}
+
+.name-footer {
+	font-family: arial;
+	float: left;
+	display: inline;
+}
+
+.nav-footer {
+	float:right;
+	display: inline;
+	padding:10px;
+	font-family: arial;
+}
+
+.info {
+	font-family: arial;
+	text-align: center;
+}
+
+.profile-pic {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.portfolio {
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.contact {
+	text-align: center;
+	font-family: arial;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+p {
+	font-family: arial;
+}
+
+li {
+	list-style-type: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #000;
+}
+
+li img {
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+a:hover {
+	color: blue;
+}
+
+@media (min-width: 768px) {
+	.portfolio ul li {
+		float:left;
+		display: block;
+		width: 45%;
+		margin: 2.5%;
+	}
+
+	.main-nav li{
+		display: inline;
+	}
+
+	.info {
+		float:left;
+		width: 50%;
+	}
+
+	.profile-pic {
+		float:right;
+	}
+}
+
+@media (min-width: 1024px) {
+	.portfolio ul li {
+		float: left;
+		width: 25%;
+		margin: 4.1666%;
+	}
+}
