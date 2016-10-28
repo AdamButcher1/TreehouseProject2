@@ -20,12 +20,23 @@ body {
 	margin-top: 6px;
 	margin-bottom: 6px;
 	list-style: none;
-	width:90%;
+}
+
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .footer-info {
 	 background-color: #FFF;
 }
+
 
 .name-footer {
 	font-family: arial;
@@ -86,7 +97,27 @@ a:hover {
 	color: blue;
 }
 
+a {
+	background-color: #82E0AA;
+}
+
+@media (max-width: 768px) {
+	.footer-info {
+		display: none;
+	}
+}
+
+
 @media (min-width: 768px) {
+
+	.small-footer-info {
+		display: none;
+	}
+
+	header {
+		text-align: center;
+	}
+
 	.portfolio ul li {
 		float:left;
 		display: block;
@@ -94,18 +125,33 @@ a:hover {
 		margin: 2.5%;
 	}
 
+	.container {
+		width: 85%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+
+	.main-nav {
+		padding-left: 0px;
+	}
+
 	.main-nav li{
-		display: inline;
+		display: inline-block;
+		margin: 12px;
 	}
 
 	.info {
 		float:left;
-		width: 50%;
+		width: 45%;
 	}
 
 	.profile-pic {
+		width: 45%;
 		float:right;
 	}
+
+	
 }
 
 @media (min-width: 1024px) {
@@ -114,4 +160,22 @@ a:hover {
 		width: 25%;
 		margin: 4.1666%;
 	}
+
+	.profile-pic {
+		clear: both;
+	}
+
+	#realname{
+		float:left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li{
+		float: left;
+		margin-left: 12px;
+	}
+
 }
